@@ -3,14 +3,14 @@
 # Author:  Daniel Navarrete <https://github.com/navarretedaniel>
 # 2019
 
-# Introduction ---------------------------
+# Introduction -----------------------------------------------------------------
 #
 # Create a function that will download CPS monthly microdata for a given year.
 #
 # Example:
 #    cps_download(2018)
 
-# Function ---------------------------
+# Function ---------------------------------------------------------------------
 
 cps_download <- function(input_1){
   
