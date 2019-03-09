@@ -8,7 +8,7 @@ The raw data files referenced in these scripts can be found on Census' CPS FTP s
 
 Though Census makes yearly data dictionaries available, they are seemingly only provided as text files that have been (for me) difficult to parse through. Please exercise caution when using CPS data obtained and parsed through the scripts in this repository as there may be errors.
 
-Credit to Jean Roth at the National Bureau for Economic Research (NBER) for making their SAS code freely available. Years' column names and variable widths are based on the information made available by NBER.  For more information, please see https://www.nber.org/cps/
+Credit to Jean Roth at the National Bureau for Economic Research (NBER) for making their SAS code freely available. Years' column names and variable widths are based on the information made available by NBER.  To learn more about NBER and their data, please see https://www.nber.org/cps/
 
 # Contributing
 I am by no means an R expert.  Please feel free to offer suggestions, corrections, and contributions via the Issues feature and Pull requests.
