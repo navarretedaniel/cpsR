@@ -12,6 +12,7 @@
 # Define CPS Variables for each survey year.
 
   if (input_year == 18){  
+
     widths_18 <- c(15,3,4,3,3,3,3,3,3,3,3,3,3,3,8,3,3,3,3,3,3,3,5,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
                    3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
                    3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,8,8,8,8,3,3,8,3,8,8,3,3,3,3,3,
@@ -20,7 +21,7 @@
                    3,3,3,3,3,3,3,3,3,3,4,3,4,3,3,3,3,3,3,3,3,4,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,3,4,4,3,3,3,4,3,4,3,3,4,3,3,3,3,3,3,3,4,3,4,3,3,3,3,3,3,3,3,
                    8,3,8,4,4,3)
     
-    names_18 <- c("hrhhid","hrmonth","hryear4","hurespli","hufinal","hetenure","hehousut","hetelhhd","hetelavl","hephoneo","hefaminc","hutypea","hutypb","hutypc","hwhhwgt",
+    names_18 <- c("hrhhid","hrmonth", "hryear4","hurespli","hufinal","hetenure","hehousut","hetelhhd","hetelavl","hephoneo","hefaminc","hutypea","hutypb","hutypc","hwhhwgt",
                   "hrintsta","hrnumhou","hrhtype","hrmis","huinttyp","huprscnt","hrlonglk","hrhhid2","hwhhwtln","hubus","hubusl1","hubusl2","hubusl3","hubusl4","gereg","gediv",
                   "gestfips","gtcbsa","gtco","gtcbsast","gtmetsta","gtindvpc","gtcbsasz","gtcsa","perrp","peparent","prtage","prtfage","pemaritl","pespouse","pesex","peafever",
                   "peafnow","peeduca","ptdtrace","prdthsp","puchinhh","pulineno","prfamnum","prfamrel","prfamtyp","pehspnon","prmarsta","prpertyp","penatvty","pemntvty",
@@ -285,5 +286,7 @@
                                                                 "pest27","pest31","prsupsat","pwsupwgt","prtensat","pwtenwgt","ptst1tn","ptsd18tn","prdispwk")
                                                   
                                                   } else {
-                                                    print("ERROR: Please enter a single year (e.g., 2018) between the year range 2014 - 2019.")
+                                                    ifelse(input_year < 2014,
+                                                           print("ERROR:  Please enter a single year (e.g., 2018) between the year range 2014 - 2019."),
+                                                           print("ERROR:  Data for the given year not found. Download data using the download_cps() function."))
                                                     }
