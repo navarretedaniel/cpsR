@@ -9,3 +9,5 @@ Depends: R (>= 3.1.0)
 License: MIT License
 URL: https://github.com/navarretedaniel/cpsR
 BugReports: https://github.com/navarretedaniel/cpsR/issues
+Imports:
+  readr
