@@ -4,6 +4,10 @@ language: r
 warnings_are_errors: true
 sudo: required
 
-addons:
-  apt:
-    packages: tidyverse
+r_packages:
+  - devtools
+  - tidyverse
+
+#addons:
+#  apt:
+#    packages: tidyverse
