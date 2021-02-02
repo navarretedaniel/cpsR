@@ -1,14 +1,34 @@
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/navarretedaniel/cpsR/workflows/R-CMD-check/badge.svg)](https://github.com/navarretedaniel/cpsR/actions)
+[![Build Status](https://www.travis-ci.com/navarretedaniel/cpsR.svg?branch=master)](https://www.travis-ci.com/navarretedaniel/cpsR)
+<!-- badges: end -->
+
 # cpsR
 R scripts to download, parse, and save Census' Current Population Survey (CPS) microdata.
 
-# Disclaimer
-Due to periodic changes in the CPS survey over the years, I have limited retrieval to survey years between 2014 - 2019.
+Download and parsing of CPS data is currently limited to survey years between 2014 - 2019.
 
-The raw data files referenced in these scripts can be found on Census' CPS FTP site at:  https://thedataweb.rm.census.gov/ftp/cps_ftp.html
+The raw data files referenced in these scripts can be found on Census' CPS datasets site at:  https://www2.census.gov/programs-surveys/cps/datasets/
 
-Though Census makes yearly data dictionaries available, they are seemingly only provided as text files that have been (for me) difficult to parse through. Please exercise caution when using CPS data obtained and parsed through the scripts in this repository as there may be errors.
+## Data download
+Download CPS data for a given year and month using:
+`cps_download(year, month)`
 
-Credit to Jean Roth at the National Bureau for Economic Research (NBER) for making their SAS code freely available. Years' column names and variable widths are based on the information made available by NBER.  To learn more about NBER and their data, please see https://www.nber.org/cps/
+To download the January 2018 dataset, for example:
+`cps_download(2018, 1)`
+
+## Data parsing
+Once your dataset(s) have been downloaded, parse through the .dat file and convert to .csv:
+`cps_process(year)`
+
+To parse through the January 2018 dataset, for example:
+`cps_process(2018)`
+
+### To Do:
+Add functionality to parse through specific months (rather than all datasets for a given year).
+
+# Credit
+Credit to Jean Roth at the National Bureau for Economic Research (NBER) for making their SAS and SPSS code freely available. Years' column names and variable widths are based on the information made available by NBER.  To learn more about NBER and their data, please see https://www.nber.org/cps/.
 
 # Contributing
-I am by no means an R expert.  Please feel free to offer suggestions, corrections, and contributions via the Issues feature and Pull requests.
+Please feel free to offer suggestions, corrections, and contributions via the Issues feature and Pull requests.
