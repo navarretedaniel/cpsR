@@ -1,0 +1,13 @@
+Package: cpsR
+Type: Package
+Title: Download, Parse, and Save Census' Current Population Survey (CPS) microdata.
+Version: 0.1
+Date: 2021-02-01
+Author: Daniel Navarrete <daniel.navarrete.bueno@gmail.com>
+Description: Download, Parse, and Save Census' Current Population Survey (CPS) microdata.
+Depends: R (>= 3.1.0)
+License: MIT License
+URL: https://github.com/navarretedaniel/cpsR
+BugReports: https://github.com/navarretedaniel/cpsR/issues
+Imports:
+  readr
