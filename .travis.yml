@@ -3,3 +3,7 @@ dist: xenial
 language: r
 warnings_are_errors: true
 sudo: required
+
+addons:
+  apt:
+    packages: tidyverse
