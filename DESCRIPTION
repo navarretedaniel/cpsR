@@ -1,6 +1,6 @@
 Package: cpsR
 Type: Package
-Title: Download, Parse, and Save Census' Current Population Survey (CPS) microdata.
+Title: Download, Parse, and Save Census' Current Population Survey (CPS) Microdata
 Version: 0.1
 Date: 2021-02-01
 Authors@R: person("Navarrete", "Daniel", email = "daniel.navarrete.bueno@gmail.com",
